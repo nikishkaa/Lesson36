@@ -4,7 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Box<String> sbox = new Box<String>(); // before JDK 7.0
         sbox.setValue("esfd");
-        String s = sbox.getValue();
+//        sbox.setValue(5);
+        String s1 = sbox.getValue();
+
+        Box<Integer> integerBox = new Box<>(); // after JDK 7.0
 
 //        A a = new B();
 //        System.out.println(a instanceof C);
